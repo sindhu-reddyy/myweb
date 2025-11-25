@@ -1,0 +1,599 @@
+/*Convert a string into a zigzag pattern on a given number of rows, then read row by row.
+Example: ngitkmec in 2 rows as follows 
+n    i     k     e
+  g     t     m     c
+
+row1 first and then row2. Thus output = nikegtmc
+
+Testcase
+
+input=krishna
+2
+output=kiharsn
+
+*/
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.next();
+        int row=sc.nextInt();
+        for(int i=0;i<row;i++){
+            for(int j=i;j<str.length();j=j+row){
+                System.out.print(str.charAt(j));
+            }
+        }
+    }
+}
+
+-----------------------------------
+/*print the following pattern:
+Palindromic Number Triangle
+input=5
+output=
+        1
+      2 1 2
+    3 2 1 2 3
+  4 3 2 1 2 3 4
+5 4 3 2 1 2 3 4 5
+
+*/
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(); 
+        for (int i = 1; i <= n; i++){
+            for (int j = 1; j <= n - i; j++){
+                System.out.print("  ");
+            }
+            for (int j = i; j >= 1; j--){
+                System.out.print(j + " ");
+            }
+            for (int j = 2; j <= i; j++){
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+
+}
+---------------------------------
+/*Check Neon Number
+A number is neon if the sum of digits of its square is equal to the number.
+Example: 9² = 81 → 8 + 1 = 9
+
+Test Case:
+input=9
+output=true
+
+input=10
+output=false
+*/
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int square=n*n;
+        int sum=0;
+        while(square>0){
+            int digit=square%10;
+            sum+=digit;
+            square/=10;
+        }
+        if(sum==n){
+            System.out.print("true");
+        }else{
+            System.out.print("false");
+        }
+    }
+}
+----------------------------------
+/*Spiral Traversal of Matrix
+input=3 3
+1 2 3  
+4 5 6  
+7 8 9
+output=1 2 3 6 9 8 7 4 5
+
+
+input=3 2
+1 2 
+4 5 
+7 8
+output=1 2 5 8 7 4
+*/
+----------------------------------
+/*
+Find All Pairs with Given Sum. Hint: (Two-pointer on Sorted Array)
+input=7
+1 2 3 4 5 6 7
+7
+output=1 6
+2 5
+3 4
+*/
+----------------------------------
+/*
+Given a list of strings and a prefix, return only the strings that start with the prefix.
+
+input=apple applet banana application
+app
+output=apple applet application
+*/
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        String a=sc.nextLine();
+        String[] words=s.split(" ");
+        for(String i:words){
+            if(i.startsWith(a)){
+                System.out.print(i+" ");
+            }
+        }
+    }
+}
+-----------------------------
+/*Given a list of strings, group all the anagrams together using Java Collections.
+
+input=eat tea tan ate nat bat
+output=[["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+
+input=listen silent enlist google gogole
+output=[["listen", "silent", "enlist"], ["google", "gogole"]]
+
+*/
+-----------------------------
+/*
+Aruna wants to check the Top K Frequent Elements in the list. Return the k most frequent elements using collections
+Testcase:
+input=1 1 1 2 2 3 3 1 3 4
+2
+Output:
+[1,2]
+*/
+---------------------------------
+/*
+WAJP to accept consumer number,Type of connection(D-Domestic/C-Commercial),consumer name,previous month reading & current month reading from the user. Then calculate electricity bill by deducting previous reading from current reading. Now print the total bill with following constraints.
+if the connection is Domestic
+	total units<=100 multiply with 1
+	total units>100 && units<=200 multiply with 3
+	total units>200 && units<=500 multiply with 5
+	total units>500 multiply with 7
+if the connection is Commercial
+	total units<=100 multiply with 2
+	total units>100 && units<=200 multiply with 4
+	total units>200 && units<=500 multiply with 6
+	total units>500 multiply with 8
+input=
+Enter consumer number  456
+Enter Type(D or C) of connection  C
+Enter consumer name  RadhaKrishna
+Enter previous month reading  125
+Enter current month reading 525
+output=         
+	 Consumer number = 456
+         Consumer name = RadhaKrishna
+         Type of connection  = COMMERCIAL
+         Previous Month  Reading = 125.0
+         Current Month  Reading = 525.0
+         Total units = 400.0
+         Total bill = RS 2400.0
+
+case=2
+input=
+Enter consumer number  12345
+Enter Type(D or C) of connection  D
+Enter consumer name  RamaKrishna
+Enter previous month reading  250
+Enter current month reading 350
+
+output=
+         Consumer number = 12345
+         Consumer name = RamaKrishna
+         Type of connection  = DOMESTIC
+         Previous Month  Reading = 250.0
+         Current Month  Reading = 350.0
+         Total units = 100.0
+         Total bill = RS 100.0
+*/
+----------------------------
+/*Alexa is trying to find even length words and reverse in a 
+given string. Help Alexa to print reverse of all even-length words.
+ 
+Testcase: 
+input=
+Create a Date object using the Calendar class
+
+output=
+etaerC a etaDtcejbo using the radnelaC class
+*/
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int count=0;
+        String s=sc.nextLine();
+        String[] arr=s.split(" ");
+        for(String i:arr){
+            int l=i.length();
+            if(l%2==0){
+                StringBuilder z=new StringBuilder(i);
+                String y=z.reverse().toString();
+                System.out.print(y+" ");
+            }else{
+                System.out.print(i+" ");
+            }
+            
+            
+        }
+    }
+}
+-------------------------------
+/*
+Write a Java program to check whether there are two consecutive
+(following each other continuously), identical letters in a given string.
+
+Testcase:
+input=Follow
+output=true
+
+input=java
+output=false
+*/
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        boolean found =false;
+        for(int i=0;i<s.length()-1;i++){
+            if(s.charAt(i)==s.charAt(i+1)){
+                found=true;
+                break;
+                
+            }
+        }
+        System.out.print(found);
+        
+    }
+}
+----------------------------
+/*
+Write a Java program to find the index of the 
+first unique character in a given string. 
+Assume that there is at least one unique character in the string.
+
+input=wresource
+output=First unique character : 0
+
+input=javajavaworld
+output=First unique character : 8
+
+input=javajava
+output=-1
+
+*/
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+----------------------------------
+/*Create an abstract class Shape with abstract methods getArea() and getPerimeter(). 
+Create subclasses Circle and Rectangle that implement these methods.
+input=5
+4
+5
+output=Area of Circle=78.5
+Circumference of Circle=31.4
+Area of Rectangle=20
+Perimeter of Rectangle=18
+*/
+import java.util.*;
+abstract class shape{
+    abstract double getArea();
+    abstract double getPerimeter();
+}
+class Circle extends shape{
+    double radius;
+    Circle(double radius){
+        this.radius=radius;
+    }
+    double getArea(){
+        return Math.PI * radius*radius;
+    }
+    double getPerimeter(){
+        return 2* Math.PI * radius;
+    }
+    
+}
+class Rectangle extends shape{
+    double length;
+    double width;
+    Rectangle(double length,double width){
+        this.length=length;
+        this.width=width;
+    }
+    double getArea(){
+        return length*width;
+    }
+    double getPerimeter(){
+        return (2*length)+(2*width);
+    }
+}
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        double rad=sc.nextDouble();
+        double length=sc.nextDouble();
+        double width=sc.nextDouble();
+        Circle c=new Circle(rad);
+        System.out.printf("Area of Circle=%.1f\n",c.getArea());
+        System.out.printf("Circumference of Circle=%.1f\n",c.getPerimeter());
+        Rectangle r=new Rectangle(length,width);
+        System.out.println("Area of Rectangle="+r.getArea());
+        System.out.println("Perimeter of Rectangle="+r.getPerimeter());
+        
+        
+        
+    }
+}
+---------------------------------
+/*BankAccountAbstractClass
+Create an abstract class BankAccount with deposit(), withdraw(), and getBalance() methods. Implement two subclasses: SavingsAccount and CurrentAccount.
+In Savings account operate withdraw only if balance is >=1000 after withdrawal, otherwise display "Minimum balance of Rs.1000 required."
+
+input=2000
+1500
+500
+3000
+2500
+5500
+output=Minimum balance of Rs.1000 required.
+Savings Balance: 2500.0
+Current Balance: 6000.0
+*/
+abstract class BankAccount{
+    abstract double deposit();
+    abstract double withdraw();
+    abstract double getBalance();
+}
+class SavingsAccount extends BankAccount{
+    
+}
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        LinkedHashMap<Character,Integer> f=new LinkedHashMap<>();
+        for(char c:s.toCharArray()){
+            f.put(c,f.getOrDefault(c,0)+1);
+        }
+        for(int i=0;i<s.length();i++){
+            if(f.get(s.charAt(i))==1){
+                System.out.println("First unique character : "+i);
+                return;
+            }
+        }
+        System.out.print(-1);
+    }
+}
+----------------------------
+solution:
+/*BankAccountAbstractClass
+Create an abstract class BankAccount with deposit(), withdraw(), and getBalance() methods. Implement two subclasses: SavingsAccount and CurrentAccount.
+In Savings account operate withdraw only if balance is >=1000 after withdrawal, otherwise display "Minimum balance of Rs.1000 required."
+
+input=2000
+1500
+500
+3000
+2500
+5500
+output=Minimum balance of Rs.1000 required.
+Savings Balance: 2500.0
+Current Balance: 6000.0
+*/
+// import java.util.*;
+// abstract class BankAccount{
+//     protected double balance;
+//     BankAccount(double initialbalance){
+//         this.balance=initialbalance;
+//     }
+//     abstract double deposit();
+//     abstract double withdraw();
+//     double getBalance(){
+//         return balance;
+//     }
+// }
+// class SavingsAccount extends BankAccount{
+//     SavingsAccount(double initialbalance){
+//         super(initialbalance);
+//     }
+//     void deposit(double amount){
+//         balance+=amount;
+//     }
+//     void withdraw(double amount){
+//         if(balance-amount>=1000){
+//             balance-=amount;
+//         }else{
+//             System.out.println("Minimum balance of Rs.1000 required.");
+//         }
+//     }
+    
+// }
+// class CurrentAccount extends BankAccount{
+//     CurrentAccount(double initialbalance){
+//         super(initialbalance);
+//     }
+//     void deposit(double amount){
+//         balance+=amount;
+//     }
+//     void withdraw(double amount){
+//         balance-=amount;
+//     }
+    
+// }
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         SavingsAccount sa = new SavingsAccount(sc.nextDouble()); 
+//         sa.withdraw(sc.nextDouble()); 
+//         sa.deposit(sc.nextDouble());
+
+//         CurrentAccount ca = new CurrentAccount(sc.nextDouble());
+//         ca.withdraw(sc.nextDouble()); 
+//         ca.deposit(sc.nextDouble()); 
+
+//         System.out.println("Savings Balance: " + sa.getBalance());
+//         System.out.println("Current Balance: " + ca.getBalance());
+        
+//     }
+// }
+
+import java.util.*;
+abstract class BankAccount{
+    protected double balance;
+    BankAccount(double initialBalance){
+        this.balance = initialBalance;
+    }
+
+    abstract void deposit(double amount);
+    abstract void withdraw(double amount);
+    double getBalance(){
+        return balance;
+    }
+}
+class SavingsAccount extends BankAccount{
+    SavingsAccount(double initialBalance){
+        super(initialBalance);
+    }
+    void deposit(double amount){
+        balance += amount;
+    }
+    void withdraw(double amount){
+        if (balance - amount >= 1000){
+            balance -= amount;
+        }else{
+            System.out.println("Minimum balance of Rs.1000 required.");
+        }
+    }
+}
+class CurrentAccount extends BankAccount{
+    CurrentAccount(double initialBalance){
+        super(initialBalance);
+    }
+    void deposit(double amount){
+        balance += amount;
+    }
+    void withdraw(double amount){
+        balance -= amount;
+    }
+}
+public class Test{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        SavingsAccount sa = new SavingsAccount(sc.nextDouble());
+        sa.withdraw(sc.nextDouble());
+        sa.deposit(sc.nextDouble());
+
+        CurrentAccount ca = new CurrentAccount(sc.nextDouble());
+        ca.withdraw(sc.nextDouble());
+        ca.deposit(sc.nextDouble());
+
+        System.out.println("Savings Balance: " + sa.getBalance());
+        System.out.println("Current Balance: " + ca.getBalance());
+    
+
+}
+
+}
+--------------------------------------------
+/*Online Course Platform
+Design an abstract class Course with an abstract method deliverContent() & a defined method displayType() to display course title. 
+Each course must also display its course type. 
+Subclasses include RecordedCourse and LiveCourse, each with custom behavior.
+
+Testcases:
+case=1
+input=Java Basics
+Advanced Java
+ouput=Course Title: Java Basics
+Streaming pre-recorded video content.
+Course Title: Advanced Java
+Conducting live session with instructor.
+
+case=2
+input=Nil
+Advanced Python
+ouput=Course Title: Nil
+There is no pre-recorded video content.
+Course Title: Advanced Python
+Conducting live session with instructor.
+
+case=3
+input=Advanced DataStructures
+Nil
+ouput=Course Title: Advanced DataStructures
+Streaming pre-recorded video content.
+Course Title: Nil
+There is no live session planned.
+
+case=4
+input=Nil
+Nil
+ouput=Course Title: Nil
+There is no pre-recorded video content.
+Course Title: Nil
+There is no live session planned.
+*/
+import java.util.*;
+abstract class Course{
+    protected String title;
+    Course(String title){
+        this.title=title;
+    }
+    void displayType(){
+        System.out.println("Course Title: "+title);
+    }
+    abstract void deliverContent();
+}
+class RecordedCourse extends Course{
+    RecordedCourse(String title){
+        super(title);
+    }
+    void deliverContent(){
+        if(title.equals("Nil")){
+            System.out.println("There is no pre-recorded video content.");
+        }else{
+            System.out.println("Streaming pre-recorded video content.");
+            
+        }
+    }
+}
+class LiveCourse extends Course{
+    LiveCourse(String title){
+        super(title);
+    }
+    void deliverContent(){
+        if(title.equals("Nil")){
+            System.out.println("There is no live session planned.");
+        }else{
+            System.out.println("Conducting live session with instructor.");
+            
+        }
+    }
+}
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        RecordedCourse rc=new RecordedCourse(sc.nextLine());
+        rc.displayType();
+        rc.deliverContent();
+        LiveCourse lc=new LiveCourse(sc.nextLine());
+        lc.displayType();
+        lc.deliverContent();
+        
+    }
+}
+----------------------------

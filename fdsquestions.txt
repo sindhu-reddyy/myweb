@@ -1,0 +1,290 @@
+/*Problem: Sort a list of strings in alphabetical order.
+input=radha krishna madhu sudha asshu dhudhu
+output=Sorted Names: asshu dhudhu krishna madhu radha sudha
+*/
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String input=sc.nextLine();
+        String names[]=input.split(" ");
+        Arrays.sort(names);
+        System.out.print("Sorted Names: ");
+        for(String name:names){
+            System.out.print(name+" ");
+        }
+    }
+}
+
+
+------------------------------
+//Problem: Count how many times each character appears in a string.
+/*
+input=radha
+output=Char Freq={a=2,r=1,d=1,h=1}
+*/
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String input=sc.next();
+        Map<Character,Integer> cf=new HashMap<>();
+        for(char ch:input.toCharArray())
+            cf.put(ch,cf.getOrDefault(ch,0)+1);
+            System.out.println("Char Freq="+cf);
+        
+        
+    }
+}
+
+-----------------------------
+/*Problem: Find First Non-Repeating Character
+Testcase:
+input=jakejakeradha
+output=First non-repeating character: r
+
+input=nnggiitt
+output=-1
+*/
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String input=sc.next();
+        Map<Character,Integer> freq=new LinkedHashMap<>();
+        for(char ch:input.toCharArray()){
+            freq.put(ch,freq.getOrDefault(ch,0)+1);
+            
+        }
+        char result='-'; 
+        for(char ch:freq.keySet()){
+            if(freq.get(ch)==1){
+                result=ch;
+                break;
+            }
+        }
+        if(result=='-'){
+            System.out.println("-1");
+        }else{
+            System.out.println("First non-repeating character:"+result);
+        }
+    }
+}
+
+
+------------------------------
+/*Problem: Given a list of words, group them based on their lengths.
+Testcase:
+input=java is fun to code and happy to execute
+output=Grouped by Length: {2=[is, to, to], 3=[fun, and], 4=[java, code], 5=[happy], 7=[execute]}
+
+input=all is well and all the best
+output=Grouped by Length: {2=[is], 3=[all, and, all, the], 4=[well, best]}
+
+*/
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String input=sc.nextLine();
+        String[] words=input.split(" ");
+        Map<Integer,List<String>> grouped=new TreeMap<>();
+        for(String word:words){
+            int len=word.length();
+            grouped.putIfAbsent(len,new ArrayList<>());
+            grouped.get(len).add(word);
+        }
+        System.out.println("Grouped by Length:"+grouped);
+    }
+}
+
+--------------------
+/*Problem: Check if two strings are anagrams (i.e., contain the same characters with same frequency).
+Testcases:
+input=silent
+listen
+output=Are anagrams? true
+
+input=Nike
+Bike
+output=Are anagrams? false
+*/
+---------------------
+/*
+Demostrate List interface in java
+input=apple
+banana
+kiwi
+output=['apple','banana','kiwi']
+*/
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        List<String> list=new ArrayList<>();
+        list.add("apple");
+        list.add("banana");
+        list.add("kiwi");
+        System.out.println(list);
+    }
+}
+-------------------
+/*
+Implement stack operations using List interface
+Testcase:
+input=10 20 30 40 50
+output=Stack Elements = 50 40 30 20 10
+Stack Size = 5
+Peek Element = 50
+Popped Top = 50
+Popped Top = 40
+Stack Elements = 30 20 10
+Stack Size = 3
+*/
+import java.util.*;
+public class Test{
+    public static void main(String[] args){
+        
+        Stack<Integer> stack=new Stack<>();
+        Scanner sc=new Scanner(System.in);
+        String[] input=sc.nextLine().split(" ");
+        
+        
+        for(String str:input){
+            stack.add(Integer.parseInt(str));
+        }
+        System.out.print("Stack Elements = ");
+        for(int i=stack.size()-1;i>=0;i--)System.out.print(stack.get(i)+" ");
+        System.out.println("\nStack Size = "+stack.size());
+        System.out.println("Peek Element = "+stack.peek());
+        System.out.println("Popped Top = "+stack.pop());
+        System.out.println("Popped Top = "+stack.pop());
+        
+        System.out.print("Stack Elements = ");
+        for(int i=stack.size()-1;i>=0;i--) System.out.print(stack.get(i)+" ");
+        System.out.println("\nStack Size = "+stack.size());
+        sc.close();
+        
+    }
+}
+
+---------------
+/*
+Remove Duplicates from a List
+Problem: Given a list of integers, remove all duplicates and return the unique elements.
+input=1 2 3 3 4 5 6 6 7 8
+output=1 2 3 4 5 6 7 8
+
+input=1 1 2 2 3 3 4 4 5 5
+output=1 2 3 4 5
+*/
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        List<Integer> l=new ArrayList<>();
+        Scanner sc=new Scanner(System.in);
+        for(int i=0;i<10;i++){
+            int n=sc.nextInt();
+            l.add(n);
+        }
+        Set<Integer> s=new HashSet<>(l);
+        System.out.println(s);
+    }
+}
+
+------------------------------
+/*
+Implement Set interface using HashSet class
+
+input=8
+apple
+banana
+kiwi
+strawberry
+orange
+apple
+banana
+kiwi
+output=banana
+orange
+apple
+kiwi
+strawberry
+
+*/
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        Set<String> s=new HashSet<>();
+        int n=sc.nextInt();
+        for(int i=0;i<n;i++){
+            s.add(sc.next());
+            
+        }
+        for(String str:s){
+            System.out.println(str);
+        }
+    }
+    
+}
+-----------------------
+/*Implement Queue operations using Collections 
+Testcase:
+input=10 20 30 40 50
+output=Queue Elements = 10 20 30 40 50
+Queue Size = 5
+First Element = 10
+Deleted Element = 10
+Deleted Element = 20
+Queue Elements = 30 40 50
+Queue Size = 3
+
+input=10 20
+output=Queue Elements = 10 20
+Queue Size = 2
+First Element = 10
+Deleted Element = 10
+Deleted Element = 20
+Queue is Empty
+Empty Queue
+*/
+import java.util.*;
+public class Test 
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Queue<Integer> queue = new LinkedList<>();
+        String[] input = sc.nextLine().split(" ");
+        for (String val : input){
+            queue.add(Integer.parseInt(val));
+        }
+        System.out.print("Queue Elements = ");
+        for (int ele : queue){
+            System.out.print(ele + " ");
+        }
+        System.out.println();
+        System.out.println("Queue Size = " + queue.size());
+        if (!queue.isEmpty()){
+            System.out.println("First Element = " + queue.peek());
+        }
+        for (int i = 0; i < 2; i++) {
+            if (!queue.isEmpty()){
+                System.out.println("Deleted Element = " + queue.poll());
+            }
+        }
+        if(!queue.isEmpty()){
+            System.out.print("Queue Elements = ");
+            for (int ele : queue){
+            System.out.println();
+            System.out.println("Queue Size = " + queue.size());
+            
+
+}
+        }else{
+            System.out.println("Queue is Empty");
+            System.out.println("Empty Queue");
+        }
+    }
+}
+
+-----------------------

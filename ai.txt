@@ -1,0 +1,153 @@
+1. techniques for knowledge representation:
+->It is method which represents facts about world
+->it is an important aspect of ai where information about real world is encoded in a way that computer can understand and can utilize that to solve complex tasks
+->ex.. understanding natural language,planning route,etc
+
+Several techniques used are:
+
+1.Logical representation:
+uses formal logic to represent facts and rules
+useful for clear reasoning
+ex..propositional vs predicate logic 
+
+2.semantic networks:
+graphical representation of knowledge using nodes(concepts) and edges(relationships)
+Used in natural language processing
+ex. canary is a bird can be represented as: canary->is->a->bird.
+
+3.Frames:
+It is a structured represention using slots and values
+used for structured and oops info
+ex..Car:
+  - Type: Vehicle
+  - Wheels: 4
+  - Engine: Petrol/Diesel
+
+4.Production rules:
+respresents knowledge in if-then rules
+Used in expert system and rule based decision making
+ex.. if temp>100 then turn on cooler
+
+5.ontology:
+it is a structured vocabulary of concepts and relationships
+helps machines understand and share knowledge
+ex..heart->ispartof->circulatory system
+
+
+2.propositional         vs      predicate
+
+propo: represents facts as simple statements
+use p q r and or etc
+cannot represent complex relationships
+ex..It is raining
+simple rule based reasoning
+less expressive
+usecase:Simple rule-based systems
+
+predi:extends propo logic by variables and quantifiers
+uses forall there exists etc
+can represent complex relationships
+ex.. forall x (bird of x ->can fly of x)
+complex reasoning 
+more expressive
+usecase:Complex AI systems (e.g., expert systems, NLP)
+
+
+3. "John likes all kinds of food" – Knowledge Representation in Predicate Logic
+natural lang- original statement
+break down:
+sub:john()
+predicate:likes
+obj:all kind of foods
+
+we need to represent:
+general: food
+relationship: likes(john,food)
+
+representation :
+for all x (food of x->likes(john,x4))
+
+
+4.marcus vs Caesar:
+Marcus was a man.
+→ Man(Marcus)
+
+Marcus was a Roman.
+→ Roman(Marcus)
+
+All Romans were loyal to Caesar.
+→ ∀x (Roman(x) → LoyalTo(x, Caesar))
+
+People who are loyal to someone do not try to assassinate them.
+→ ∀x ∀y (LoyalTo(x, y) → ¬Hates(x, y))
+
+Marcus hated Caesar.
+→ Hates(Marcus, Caesar)
+ Objective:
+Determine whether there is a contradiction or whether Marcus was loyal to Caesar.
+
+ Reasoning Process:
+From (2) and (3): Marcus is a Roman → Marcus is loyal to Caesar
+→ LoyalTo(Marcus, Caesar)
+
+From (5): Marcus hated Caesar → Hates(Marcus, Caesar)
+
+From (4): If Marcus was loyal, he should not hate Caesar
+→ LoyalTo(Marcus, Caesar) → ¬Hates(Marcus, Caesar)
+
+But we are told he does hate Caesar → Contradiction
+
+5.rules of inference:
+->they help us get new conclusions from existing statements
+they form automated reasoning in ai
+
+1.modus ponens
+if p->q and p is true
+then q also true
+ex..P: It is raining
+
+Q: The ground is wet
+
+Given: If it is raining, then the ground is wet
+
+Also given: It is raining
+→ Therefore, the ground is wet.
+
+2.modus tollens
+if p->q and q is false so p is also false
+ex.. if alarm rings then there is fire
+Alarm did not ring (¬Q)→ So, there is no fire (¬P)
+
+3.hypothetical syllogism:
+If P → Q and Q → R, then P → R
+ex..If I study, I will pass
+If I pass, I will celebrate
+→ So, if I study, I will celebrate.
+
+4.disjunctive syllogism:
+If P ∨ Q and ¬P, then Q
+It is tea or coffee,It is not tea
+→ So, it must be coffee.
+
+5.conjunction:
+If P is true and Q is true, then P ∧ Q is true
+ex..Today is Monday,It is sunny
+→ Today is Monday and it is sunny.
+
+6.simplification:
+From P ∧ Q, we can infer P or Q individually
+It is hot and humid
+→ So, it is hot (or) it is humid.
+
+7.addition:
+If P is true, then P ∨ Q is also true
+I am hungry
+→ I am hungry or sleepy.
+
+ Importance in AI:
+These rules allow AI systems to reason logically.
+Used in automated theorem proving, expert systems, and knowledge-based inference engines.
+
+
+
+

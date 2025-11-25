@@ -1,0 +1,231 @@
+/* WAJP to check whether the 2 given numbers are with same digit 
+ot not. If yes print true else false.
+Example :   14 & 54 - common digit is 4 - output : TRUE
+            23 & 45 - No common digit - output : FALSE
+*/
+------------------------------
+/*WAJP to print remainder without using modulo operator
+Example : 19 & 7, output = 5 */
+import java.util.Scanner;
+public class Test{
+    public static void main(String[] args){
+
+
+        Scanner sc = new Scanner(System.in);
+
+        
+        int dividend = sc.nextInt();
+
+        int divisor = sc.nextInt();
+
+        if (divisor == 0) {
+            System.out.println("Divisor cannot be zero.");
+            return;
+        }
+        int quotient = dividend / divisor;
+        int remainder = dividend - (quotient * divisor);
+
+        System.out.println(remainder);
+    
+
+}
+
+}
+---------------------------------------
+/*Write a Java program to capitalize the first letter of each word in a sentence.
+Sample data:
+Input a Sentence: the quick brown fox jumps over the lazy dog.         
+output:
+The Quick Brown Fox Jumps Over The Lazy Dog.
+*/
+import java.util.*;
+
+public class Test{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Input a Sentence: ");
+        String sentence = sc.nextLine();
+
+        String[] words = sentence.split(" ");
+        StringBuilder capitalizedSentence = new StringBuilder();
+
+        for (String word : words){
+            if (!word.isEmpty()){
+                String capitalizedWord = word.substring(0, 1).toUpperCase() + word.substring(1);
+                capitalizedSentence.append(capitalizedWord).append(" ");
+            }
+        }
+
+        System.out.println("Output:");
+        System.out.println(capitalizedSentence.toString().trim());
+    }
+
+}
+-------------------------------------
+/*
+Two friends are playing a game in which they will say any name. 
+If that name contains all unique characters then he is the winner, 
+otherwise looser.
+
+Example 1
+Enter name:
+Ngit                                                                                                                
+You won the game!!
+
+Example 2
+Enter name:
+Praveen                                                                                                                 
+You lost the game
+*/
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter name:");
+        String name=sc.next();
+        name=name.toLowerCase();
+        boolean unique=true;
+        Set<Character> set=new HashSet<>();
+        
+        for(int i=0;i<name.length();i++){
+            char ch=name.charAt(i);
+            if(set.contains(ch)){
+                unique=false;
+                break;
+            }
+            set.add(ch);
+        }
+        if(unique){
+            System.out.println("You won the game!!");
+        }
+        else{
+            System.out.println("You lost the game");
+            
+        }
+        
+        
+        
+        
+    }
+}
+-----------------------------------
+/*Write a Java program to count letters, spaces, numbers and other characters in an input string.
+
+Test Data:
+The string is : Aa kiu, I swd skieo 236587. GH kiu: sieo?? 25.33
+Expected Output
+The string is :  Aa kiu, I swd skieo 236587. GH kiu: sieo?? 25.33
+letter: 23                                               
+space: 9                                                 
+number: 10                                               
+other: 6
+*/
+class Test{
+    public static void main(String[] args){
+        String str = "Aa kiu, I swd skieo 236587. GH kiu: sieo?? 25.33";
+        int letters = 0, spaces = 0, numbers = 0, others = 0;
+
+        for (int i = 0; i < str.length(); i++){
+            char ch = str.charAt(i);
+            if (Character.isLetter(ch)){
+                letters++;
+            } else if (Character.isDigit(ch)){
+                numbers++;
+            } else if (Character.isWhitespace(ch)){
+                spaces++;
+            } else{
+                others++;
+            }
+        }
+
+        System.out.println("The string is :  " + str);
+        System.out.println("letter: " + letters);
+        System.out.println("space: " + spaces);
+        System.out.println("number: " + numbers);
+        System.out.println("other: " + others);
+        }
+
+}
+
+----------------------------------
+/*Write a Java program 
+Create an Employee class to read employee details like Empno, name and 
+basic salary then calculate gross salary of an employee with respect to 
+specified conditions mentioned below and then print basic details along with gross.
+
+If Basic salary<=10k then HRA=20%;DA=80%
+If Basic salary<=20k then HRA=25%;DA=90%
+If Basic salary>20k then HRA=30%;DA=95%
+Gross salary= Basic salary + HRA+ DA
+
+Sample:
+Input=
+Enter the employee id:101
+Enter the employee name:Varun
+Enter the basic salary of an employee:25000
+Output=
+Id: 101
+Name: Varun
+Basic salary: 25000
+Gross salary: 56250.0
+*/
+import java.util.*;
+class Employee{
+    int Empno;
+    String name;
+    int salary;
+    Employee(int Empno,String name,int salary){
+        this.Empno=Empno;
+        this.name=name;
+        this.salary=salary;
+    }
+    void printDetails(){
+        System.out.println("Id: "+Empno);
+        System.out.println("Name: "+name);
+        System.out.println("Basic salary: "+salary);
+        float HRA=0f,DA=0f;
+        float gross;
+        if(salary<=10000){
+            
+            HRA=0.2f;
+            DA=0.8f;
+            
+            
+            
+        }
+        else if(salary<=20000 ){
+            
+            HRA=0.25f;
+            DA=0.9f;
+         
+        }
+        else{
+            
+            HRA=0.3f;
+            DA=0.95f;
+            
+        }
+        gross=salary+(salary*HRA)+(salary*DA);
+        System.out.println("Gross salary: "+gross);
+        
+    }
+    
+}
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the employee id:");
+        int empno=sc.nextInt();
+        sc.nextLine();
+        System.out.print("Enter the employee name:");
+        String name=sc.nextLine();
+        System.out.print("Enter the basic salary of an employee:");
+        int salary=sc.nextInt();
+        Employee e=new Employee(empno,name,salary);
+        e.printDetails();
+        
+        
+        
+    }
+}

@@ -1,0 +1,769 @@
+
+LAB
+ConstrcutorPractice
+Started
+ on Wednesday, 16 July 2025, 11:53 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+PasswordValidity
+Started
+ on Wednesday, 16 July 2025, 11:53 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+StringPractice
+Started
+ on Wednesday, 16 July 2025, 11:53 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Electricity Bill
+Started
+ on Wednesday, 16 July 2025, 11:49 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+FirstUniqueCharacter
+Started
+ on Wednesday, 16 July 2025, 11:49 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+ReverseEvenLengthWords
+Started
+ on Wednesday, 16 July 2025, 11:49 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Identical/Consecutiveletters
+Started
+ on Wednesday, 16 July 2025, 11:49 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+UniqueCharwillWin
+Started
+ on Wednesday, 16 July 2025, 11:49 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Remainder without using modulo operator
+Started
+ on Wednesday, 16 July 2025, 11:48 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+CommonDigit
+Started
+ on Wednesday, 16 July 2025, 11:48 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+EmployeeDetails-ConditionalStatements
+Started
+ on Wednesday, 16 July 2025, 11:48 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+FirstWordFirstLetterUpperCase
+Started
+ on Wednesday, 16 July 2025, 11:48 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+CountCharsNumbersSpacesOthers
+Started
+ on Wednesday, 16 July 2025, 11:48 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Problem Statement 1 - Collections -Stack operations
+Started
+ on Wednesday, 16 July 2025, 11:47 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Problem Statement 2 - Constructor - Bank account program
+Started
+ on Wednesday, 16 July 2025, 11:47 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Program Statement 3 - Constructor Book
+Started
+ on Wednesday, 16 July 2025, 11:47 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Problem Statement 6 - Pattern
+Started
+ on Wednesday, 16 July 2025, 11:47 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Problem Statement 5 - Pattern
+Started
+ on Wednesday, 16 July 2025, 11:47 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Problem Statement 4 - Pattern
+Started
+ on Wednesday, 16 July 2025, 11:47 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Problem Statement 7 - Arrays
+Started
+ on Wednesday, 16 July 2025, 11:47 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Problem Statement 8 - Arrays
+Started
+ on Wednesday, 16 July 2025, 11:47 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Problem Statement 9 - Arrays
+Started
+ on Wednesday, 16 July 2025, 11:47 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Ring Pattern
+Started
+ on Wednesday, 16 July 2025, 11:47 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+OTP_Validation
+Started
+ on Wednesday, 16 July 2025, 11:47 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Bank Account
+Started
+ on Wednesday, 16 July 2025, 11:47 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+ExistenceOfTwoElementSum
+Started
+ on Wednesday, 16 July 2025, 11:47 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Two-Sum Target
+Started
+ on Wednesday, 16 July 2025, 11:47 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+OddElementAverage
+Started
+ on Wednesday, 16 July 2025, 11:47 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+StringAnagrams
+Started
+ on Wednesday, 16 July 2025, 11:47 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+StringWordsReverse
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+VowelConsonantCount
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+CharacterWordCount
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+CharacteratGivenIndexAndReplace
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+NoCaseSensitive
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+K-NamePattern
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+NamePattern1
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+NamePattern
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+StringPalindrome
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+ReverseString
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Vowelorconsonant
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+FDS TEST prog-5
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+FDS TEST prog-4
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+FDS TEST prog-3
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+FDS TEST Prog-2
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+FDS Test Prog-1
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+MatrixTranspose
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+LeftRightDiagonalSum
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+RightDiagonalElementPrint
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+LeftDiagonalElementsPrint
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+RowPower
+Started
+ on Wednesday, 16 July 2025, 11:46 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+2D Array elements Square Print
+Started
+ on Wednesday, 16 July 2025, 11:45 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+FindDigit
+Started
+ on Wednesday, 16 July 2025, 11:45 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+MergeTwoArrays
+Started
+ on Wednesday, 16 July 2025, 11:45 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+SquareOfThreeMulIndex
+Started
+ on Wednesday, 16 July 2025, 11:45 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+HollowRectanglePattern
+Started
+ on Wednesday, 16 July 2025, 11:43 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+RectanglePattern
+Started
+ on Wednesday, 16 July 2025, 11:43 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+ReversePyramid Pattern
+Started
+ on Wednesday, 16 July 2025, 11:42 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Reverse Left Triangle Pattern
+Started
+ on Wednesday, 16 July 2025, 11:42 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Reverse Right Triangle Pattern
+Started
+ on Wednesday, 16 July 2025, 11:42 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+HollowSquarePattern
+Started
+ on Wednesday, 16 July 2025, 11:42 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+PyramidPattern
+Started
+ on Wednesday, 16 July 2025, 11:42 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+LeftTrianglePattern
+Started
+ on Wednesday, 16 July 2025, 11:42 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+RightTrianglePattern
+Started
+ on Wednesday, 16 July 2025, 11:42 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+SquareModel
+Started
+ on Wednesday, 16 July 2025, 11:42 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Pattern5
+Started
+ on Wednesday, 16 July 2025, 11:42 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Pattern4
+Started
+ on Wednesday, 16 July 2025, 11:42 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Pattern3
+Started
+ on Wednesday, 16 July 2025, 11:42 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Pattern2
+Started
+ on Wednesday, 16 July 2025, 11:42 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Pattern1
+Started
+ on Wednesday, 16 July 2025, 11:41 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+All Subsets of a String
+Started
+ on Wednesday, 16 July 2025, 11:30 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+DigitSum
+Started
+ on Monday, 14 July 2025, 12:59 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Practice program to display 3 different methods messages
+Started
+ on Monday, 14 July 2025, 12:59 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Method type - 2
+Started
+ on Monday, 14 July 2025, 12:59 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Method type - 1
+Started
+ on Monday, 14 July 2025, 12:59 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Divisible by 3 or not using method
+Started
+ on Monday, 14 July 2025, 12:59 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+This keyword
+Started
+ on Monday, 14 July 2025, 12:59 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Super keyword
+Started
+ on Monday, 14 July 2025, 12:59 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+MultilevelInh
+Started
+ on Monday, 14 July 2025, 12:59 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Furniture
+Started
+ on Monday, 14 July 2025, 12:59 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+MethodOverriding
+Started
+ on Monday, 14 July 2025, 12:59 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+InhConstructor
+Started
+ on Monday, 14 July 2025, 12:59 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+SingleInh1
+Started
+ on Monday, 14 July 2025, 12:56 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Library BookBorrow Status
+Started
+ on Monday, 14 July 2025, 12:50 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Word Frequency Analyzer
+Started
+ on Monday, 14 July 2025, 12:50 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+AreAnagrams
+Started
+ on Monday, 14 July 2025, 12:50 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+GroupByLength
+Started
+ on Monday, 14 July 2025, 12:50 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+First Non Repeating Character
+Started
+ on Monday, 14 July 2025, 12:50 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Count Frequency of Characters in a String
+Started
+ on Monday, 14 July 2025, 12:49 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Sort a list of strings in alphabetical order
+Started
+ on Monday, 14 July 2025, 12:49 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Implementing Queue Operations
+Started
+ on Monday, 14 July 2025, 12:49 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Set Example
+Started
+ on Monday, 14 July 2025, 12:49 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Remove duplicates from a List
+Started
+ on Monday, 14 July 2025, 12:49 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Implementing stack operations
+Started
+ on Monday, 14 July 2025, 12:49 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+List Example
+Started
+ on Monday, 14 July 2025, 12:49 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Pattern - Palindromic Number Triangle
+Started
+ on Monday, 14 July 2025, 12:49 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Number Checking - Check Neon Number
+Started
+ on Monday, 14 July 2025, 12:49 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Arrays - 2D - Spiral Traversal of Matrix
+Started
+ on Monday, 14 July 2025, 12:49 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Arrays - 1D - Find All Pairs with Given Sum
+Started
+ on Monday, 14 July 2025, 12:49 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+List of Strings - Filter Strings by Prefix
+Started
+ on Monday, 14 July 2025, 12:49 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+A String - ZigZag Conversion
+Started
+ on Monday, 14 July 2025, 12:49 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Collection - Grouping Anagrams
+Started
+ on Monday, 14 July 2025, 12:49 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Collection - Top K Frequent Elements
+Started
+ on Monday, 14 July 2025, 12:49 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Employee class
+Started
+ on Monday, 14 July 2025, 12:48 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Shape class
+Started
+ on Monday, 14 July 2025, 12:48 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+String Palindrome Check using Recursion
+Started
+ on Monday, 14 July 2025, 12:10 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Recursive method to reverse a given string
+Started
+ on Monday, 14 July 2025, 11:56 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+Sum of digits of a number
+Started
+ on Monday, 14 July 2025, 11:47 AM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+SmartDeviceControlSystem
+Started
+ on Wednesday, 9 July 2025, 12:32 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+OnlineCoursePlatform
+Started
+ on Wednesday, 9 July 2025, 12:09 PM
+
+
+FDS-2-2-JAVA(DS CSM)-2024_25
+LAB
+BankAccount class
+Started
+ on Monday, 7 July 2025, 12:43 PM
+

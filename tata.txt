@@ -1,0 +1,884 @@
+Hi, I’m Sindhu, and the problem I want to solve is one that silently damages development, destroys public trust, and steals opportunities from citizens—corruption.
+
+We often see headlines about missing funds in development projects, delayed infrastructure, or poor-quality public services. But have we ever paused to ask why this keeps happening? It’s because corruption survives in the shadows—where money becomes invisible, and accountability is weak. Every delay, every misuse, every misreporting happens in places where no one is watching.
+
+So here’s my idea: Eliminate the hiding spaces of corruption using Radical Digital Transparency.
+
+I propose a system called the National Transparent Ledger—a public digital transaction tracker where every single rupee of government spending is recorded, traceable, and visible to citizens.
+
+Imagine this: every project, every payment, every contractor—all linked to a digital trail that anyone can verify. Citizens can follow their tax money from allocation to expenditure, watching it move step by step.
+
+This system leverages blockchain technology for tamper-proof financial records, AI-based fraud detection to spot suspicious transactions instantly, and a public dashboard so that citizens can see where money is actually going—in real time.
+
+No more fake bills.
+No more missing funds.
+No more “adjustments” hidden in bureaucracy.
+
+And this isn’t about attacking individuals. It’s about attacking the system that allows corruption to breathe. By redesigning how transactions are tracked, we ensure accountability, build trust, and encourage clean governance—without slowing down progress or development.
+
+Corruption won’t end with fear or punishment—it will end with transparency. When citizens can see, verify, and report irregularities, the system protects honesty automatically.
+
+A transparent India is not just a dream. It is possible. It is fair. It is powerful. And most importantly, it is achievable—if we decide to build systems that protect honesty and reward integrity.
+
+I choose that India. I choose transparency. I choose accountability. Thank you.
+
+2 5 1 3In an Youngsters-Health Event girls from ABC school and 
+boys from XYZ school are formed in a line.
+All the boys stand in frontside b1,b2,b3,...,bn.
+All the girls stand in backside g1,g2,g3,....,gn.
+And the line looks like, b1,b2,b3,...,bn,g1,g2,g3,...,gn.
+ 
+You are given a 2N list of integers, first N integers indiactes boys roll numbers,
+last N integers indiactes girls roll numbers.
+ 
+Now, you need transform their positions like below:
+b1,g1,b2,g2,b3,g3,.......,bn,gn.
+ 
+And print the updated list after transform their positions.2 
+ 
+ 
+Input Format:
+-------------
+Line-1: An integer N.
+Line-2: 2*N space separated integers, student roll numbers.
+ 
+Output Format:
+--------------
+Print the list of 2*N integers.
+ 
+ 
+Sample Input-1:
+---------------
+3
+2 5 1 3 4 7
+ 
+Sample Output-1:
+----------------
+2 3 5 4 1 7
+ 
+Explanation: 
+------------
+Given list, b1 =2, b2 =5, b3 =1, g1 =3, g2 =4, g3 =7 
+the answer is [2,3,5,4,1,7].
+ 
+Sample Input-2:
+--------------
+4
+1 2 3 4 3 4 2 1
+ 
+Sample Output-2:
+----------------
+1 3 2 4 3 2 4 1
+
+
+There are two different colored balls in a box, either 'red' or 'blue' in color.
+Red color balls are indicated with 1 and Blue color balls are indiacted with 2.
+ 
+All the balls are placed in a row in random order, 
+Your task is to find the largest consecutive set of blue colored balls
+in the row and print the length of it.
+ 
+ 
+ Input Format:
+ -------------
+ Line-1: An integer N represents the number of balls.
+ Line-2: N Space seperated integers, only 1's and 2's
+   
+ Output Format:
+ --------------
+ Print an integer result.
+  
+   
+ Sample Input-1:
+ ---------------
+8
+2 2 2 1 2 2 1 1
+   
+ Sample Output-1:
+ ----------------
+3
+   
+   
+ Sample Input-2:
+ ---------------
+10
+1 2 2 1 2 1 2 2 1 2
+   
+ Sample Output-2:
+ ----------------
+ 2
+
+
+You are given a 2D grid of size rows x cols. A robot (or a point) is placed 
+at a starting position (row, col) within the grid.
+
+The robot can move in 8 possible directions:
+Up-Left
+Up
+Up-Right
+Left
+Right
+Down-Left
+Down
+Down-Right
+Your task is to print the new position after moving one step in each of the 8 directions.
+If the new position goes out of the grid boundaries, print "Out of bounds" for that direction.
+
+Sample Testcase:1
+-------------------------------
+input=3 3
+1 1
+output=Up-Left: (0, 0)
+Up: (0, 1)
+Up-Right: (0, 2)
+Left: (1, 0)
+Right: (1, 2)
+Down-Left: (2, 0)
+Down: (2, 1)
+Down-Right: (2, 2)
+
+Given an undirected graph with N vertices (0 to N−1) and E edges,
+you must find the number of connected components in the graph using DFS.
+
+A connected component is a group of vertices where every vertex is reachable
+from any other vertex in that group.
+
+*****Note: Use recursion*******
+
+Sample Testcase:1
+---------------------------
+6 4
+0 1
+0 2
+3 4
+4 5
+output=2
+Explantion:
+-----------------------------
+Component 1:  0 — 1
+               \
+                2
+
+Component 2:  3 — 4 — 5
+
+
+import java.util.*;
+
+public class Solution {
+
+    static void dfs(int node, boolean[] visited, ArrayList<ArrayList<Integer>> adj) {
+       //Write code
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(); 
+        int e = sc.nextInt(); 
+
+        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+        for (int i = 0; i < n; i++)
+            adj.add(new ArrayList<>());
+
+        for (int i = 0; i < e; i++) {
+            int src = sc.nextInt();
+            int dest = sc.nextInt();
+
+            adj.get(src).add(dest);
+            adj.get(dest).add(src);
+        }
+
+        boolean[] visited = new boolean[n];
+        int count = 0;
+
+        for (int i = 0; i < n; i++) {
+                            dfs(i, visited, adj);
+                        }
+        }
+
+        System.out.println();
+    }
+}
+Given an m x n integers matrix, return the length of the longest increasing 
+path in matrix.
+
+From each cell, you can either move in four directions: left, right, up, or down. 
+You may not move diagonally or move outside the boundary 
+(i.e., wrap-around is not allowed).
+
+case=1
+input=3 3
+9 9 4
+6 6 8
+2 1 1
+output=4
+Explanation: The longest increasing path is [1, 2, 6, 9].
+ 
+case=2
+input=3 3
+3 4 5
+3 2 6
+2 2 1
+output=4
+Explanation: The longest increasing path is [3, 4, 5, 6]. Moving diagonally 
+is not allowed.
+
+case=3
+input=1 1
+1
+output=1
+Given number of vertices V and edges E, construct a graph represented as 
+adjacency list and perform a DFS traversal of the graph using iterative approach.
+
+You are free to implement the code in any programming language 
+
+case=1
+input=5 7
+0 1
+0 4
+1 2
+1 3
+1 4
+2 3
+3 4
+0
+output=[0, 4, 3, 2, 1]
+Explanation: First line is the number of vertices followed by number of edges, 
+followed by values for edges, followed by node to start the dfs.
+
+class Graph
+{
+    int V; // number of vertices
+    List<List<Integer>> adjList;
+
+    Graph(int V)
+    {
+        this.V = V;
+        adjList = new ArrayList<>();
+        for (int i = 0; i < V; i++)
+        {
+            adjList.add(new ArrayList<>());
+        }
+    }
+
+    void addEdge(int u, int v)
+    {
+        adjList.get(u).add(v);
+        adjList.get(v).add(u); // comment this line if the graph is directed
+    }
+}
+
+
+islands problem iterative:
+import java.util.*;
+class Solution
+{
+    static int numIslands(int[][] grid) {
+        int n=grid.length;
+        int m=grid[0].length;
+        boolean[][] visited=new boolean[n][m];
+        int count=0;
+        int[] dr={-1,1,0,0};
+        int[] dc={0,0,-1,1};
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(grid[i][j]==1 && !visited[i][j]){
+                    count++;
+                    Stack<int[]> stack=new Stack<>();
+                    stack.push(new int[]{i,j});
+                    visited[i][j]=true;
+                    while(!stack.isEmpty()){
+                        int[] cell=stack.pop();
+                        int r=cell[0],c=cell[1];
+                        for(int k=0;k<4;k++){
+                            int nr=r+dr[k];
+                            int nc=c+dc[k];
+                            if(nr>=0 && nr<n && nc>=0 && nc<m && grid[nr][nc]==1 && !visited[nr][nc]){
+                                visited[nr][nc]=true;
+                                stack.push(new int[]{nr,nc});
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return count;
+    }
+}
+
+
+class Solution
+{
+     static int maxAreaOfIsland(int[][] grid) {
+         int n=grid.length;
+         int m=grid[0].length;
+         int maxarea=0;
+         for(int i=0;i<n;i++){
+             for(int j=0;j<m;j++){
+                 if(grid[i][j]==1){
+                     int area=dfs(grid,i,j);
+                     maxarea=Math.max(maxarea,area);
+                 }
+             }
+         }
+         return maxarea;
+         
+     }
+     static int dfs(int[][] grid,int i,int j){
+         if(i<0||i>=grid.length||j<0||j>=grid[0].length||grid[i][j]==0) return 0;
+         grid[i][j]=0;
+         int area=1;
+         area+=dfs(grid,i-1,j);
+         area+=dfs(grid,i+1,j);
+         area+=dfs(grid,i,j-1);
+         area+=dfs(grid,i,j+1);
+         return area;
+     }
+}
+
+An explorer is standing on a 2D grid of size N × M.
+The explorer’s current position is given by (row, col).
+
+From this position, the explorer can move up, down, left, or right,
+but must stay inside the grid boundaries.
+
+Your task is to:
+Display all valid positions the explorer can move to from the current cell.
+If a move goes outside the grid, print "Out of bounds" for that direction.
+
+Input Format:
+------------------------
+Line:1 size of row and column values
+Line:2 starting vertex
+
+Sample Testcase:1
+-------------------------------------
+input=3 3
+1 1
+output=Move Up -> (0, 1)
+Move Down -> (2, 1)
+Move Left -> (1, 0)
+Move Right -> (1, 2)
+
+Explanation:
+-----------------------------------------
+The grid has 3 rows and 3 columns (indices 0–2).
+Starting position is (1,1) → center of the grid.
+All 4 moves remain inside the grid, so all are valid.
+
+You are given an integer array prices where prices[i] is the price of NeetCoin on the ith day.
+You may choose a single day to buy one NeetCoin and choose a different day
+in the future to sell it.
+Return the maximum profit you can achieve. You may choose to not make any
+transactions,in which case the profit would be 0.
+
+Sample Testcase:1
+-----------------------------
+input=10 1 5 6 7 1
+output=6
+Explanation: 
+--------------------------
+Buy prices[1] and sell prices[4], profit = 7 - 1 = 6.
+
+There is a bi-directional graph with n vertices, where each vertex is labeled 
+from 0 to n - 1 (inclusive). The edges in the graph are represented as a 
+2D integer array edges, where each edges[i] = [ui, vi] denotes a bi-directional 
+edge between vertex ui and vertex vi. Every vertex pair is connected by at most 
+one edge, and no vertex has an edge to itself.
+
+You want to determine if there is a valid path that exists from vertex source 
+to vertex destination.
+
+Given edges and the integers n, source, and destination, return true if there 
+is a valid path from source to destination, or false otherwise.
+
+Note: Given number of vertices V and edges E, a graph is created and 
+represented in the form of adjacency list. Given the graph, perform a 
+DFS traversal of the graph.
+
+
+Sample Testcase:1
+------------------------------
+input=3 3
+0 1
+1 2
+2 0
+0 2
+output=true
+
+Explanation:
+----------------------------------
+there are two paths from vertex 0 to vertex 2
+- 0 → 1 → 2
+- 0 → 2
+
+There are two different colored balls in a box, either 'red' or 'blue' in color.
+Red color balls are indicated with 1 and Blue color balls are indiacted with 2.
+ 
+All the balls are placed in a row in random order, 
+Your task is to find the largest consecutive set of blue colored balls
+in the row and print the length of it.
+ 
+ 
+ Input Format:
+ -------------
+ Line-1: An integer N represents the number of balls.
+ Line-2: N Space seperated integers, only 1's and 2's
+   
+ Output Format:
+ --------------
+ Print an integer result.
+  
+   
+ Sample Input-1:
+ ---------------
+8
+2 2 2 1 2 2 1 1
+   
+ Sample Output-1:
+ ----------------
+3
+   
+   
+ Sample Input-2:
+ ---------------
+10
+1 2 2 1 2 1 2 2 1 2
+   
+ Sample Output-2:
+ ----------------
+ 2
+
+
+You are given a 2D grid of size rows x cols. A robot (or a point) is placed 
+at a starting position (row, col) within the grid.
+
+The robot can move in 8 possible directions:
+Up-Left
+Up
+Up-Right
+Left
+Right
+Down-Left
+Down
+Down-Right
+Your task is to print the new position after moving one step in each of the 8 directions.
+If the new position goes out of the grid boundaries, print "Out of bounds" for that direction.
+
+Sample Testcase:1
+-------------------------------
+input=3 3
+1 1
+output=Up-Left: (0, 0)
+Up: (0, 1)
+Up-Right: (0, 2)
+Left: (1, 0)
+Right: (1, 2)
+Down-Left: (2, 0)
+Down: (2, 1)
+Down-Right: (2, 2)
+
+Given an undirected graph with N vertices (0 to N−1) and E edges,
+you must find the number of connected components in the graph using DFS.
+
+A connected component is a group of vertices where every vertex is reachable
+from any other vertex in that group.
+
+*****Note: Use recursion*******
+
+Sample Testcase:1
+---------------------------
+6 4
+0 1
+0 2
+3 4
+4 5
+output=2
+Explantion:
+-----------------------------
+Component 1:  0 — 1
+               \
+                2
+
+Component 2:  3 — 4 — 5
+
+
+
+We have a grid with:
+0 → empty (magnet can be placed here)
+B → iron ball
+M → metal block (stops magnetic pull)
+
+Placing a magnet at any empty cell attracts all B's in:
+same row (left + right)
+same column (up + down)
+Stopping when we hit M.
+
+Find the maximum number of B's attracted from any empty cell.
+
+Sample Testcase:1
+------------------------------
+input=3 4
+0 B 0 0 
+B 0 M B
+0 B 0 0
+output=3 
+
+Explanation:
+---------------------------
+For the given grid,
+0 B 0 0 
+B 0 M B
+0 B 0 0
+
+Placing a Magnet at (1,1) attacts 3 iron balls.
+There is a large gathering of Russian Military, all the soldiers formed as a grid of 0's and 1's.
+Here, 0's indicates women soldiers, 1's indicates men soldiers.
+
+Now, the commandant wants to find out the largest square of soldiers.
+The square should contain only men soldiers on it's border.
+
+If such largest square found, print the number of soldiers in it.
+Otherwise, print 0.
+
+Sample Input-1:
+-------------------
+4 5
+1 1 0 0 0
+0 1 1 1 1
+1 0 1 0 1
+0 1 1 1 1
+
+Sample Output-1:
+---------------------
+9
+
+Sample Input-2:
+-------------------
+2 2
+1 0 
+0 1
+
+Sample Output-2:
+---------------------
+1
+
+Sample Input-3:
+-------------------
+2 2
+0 0 
+0 0
+
+Sample Output-3:
+---------------------
+0
+
+
+There is a large gathering of Russian Military, all the soldiers formed as a grid of 0's and 1's.
+Here, 0's indicates women soldiers, 1's indicates men soldiers.
+
+Now, the commandant wants to find out the largest square of soldiers.
+The square should contain only men soldiers on it's border.
+
+If such largest square found, print the number of soldiers in it.
+Otherwise, print 0.
+
+Sample Input-1:
+-------------------
+4 5
+1 1 0 0 0
+0 1 1 1 1
+1 0 1 0 1
+0 1 1 1 1
+
+Sample Output-1:
+---------------------
+9
+
+Sample Input-2:
+-------------------
+2 2
+1 0 
+0 1
+
+Sample Output-2:
+---------------------
+1
+
+Sample Input-3:
+-------------------
+2 2
+0 0 
+0 0
+
+Sample Output-3:
+---------------------
+0
+A string is good if there are no repeated characters.
+Given a string s, return the number of good substrings of length three in s.
+Note that if there are multiple occurrences of the same substring, every 
+occurrence should be counted.
+A substring is a contiguous sequence of characters in a string.
+
+Sample Testcase:1
+----------------------
+input=xyzzaz
+output=1
+
+Explanation:
+--------------------
+There are 4 substrings of size 3: "xyz", "yzz", "zza", and "zaz". 
+The only good substring of length 3 is "xyz".
+
+Sample Testcase:2
+----------------------
+input=aababcabc
+output=4
+
+Explanation:
+---------------------
+There are 7 substrings of size 3: "aab", "aba", "bab", "abc", 
+"bca", "cab", and "abc".
+The good substrings are "abc", "bca", "cab", and "abc".
+
+here are N number of small cartoons and each cartoon will have a balloon of 
+some color identified by a number. You are asked to select fixed number of 
+P-cartoons as a subset every time and find the number of unique colored 
+balloons in the number of cartoons "P" you pick everytime.
+
+The resultant cartoons ans will be N-P+1 and return it.
+
+The number of distinct number of balloons is:
+    nums[i:i+p-1] = [nums[i], nums[i+1], ..., nums[i+p-1]].
+
+
+Input Format:
+-------------
+Line-1: Two space separated integers, N and P
+Line-2: N space separated integers, nums[]
+
+Output Format:
+--------------
+Print the (N-P+1) integers as output.
+
+
+Sample Input-1:
+---------------
+7 
+1 2 2 3 3 4 4
+4
+
+Sample Output-1:
+----------------
+3 2 3 2
+
+Explanation: 
+------------
+The number of distinct elements in each subarray of size P goes as follows:
+- nums[0:3] = [1,2,2,3] so ans[0] = 3
+- nums[1:4] = [2,2,3,3] so ans[1] = 2
+- nums[2:5] = [2,3,3,4] so ans[2] = 3
+- nums[3:6] = [3,3,4,4] so ans[3] = 2
+
+
+Vishal has given a task to find the successor of a given alphabet 'alp' 
+in a given string str[]. The alphabets in the given string str[] are 
+all lowercase letters and always in non-decreasing order.
+
+A successor of 'alp' is the next smallest alphabet exist in the string str[],
+which is greater than 'alp'. Assume that alphabets can be considered in 
+cyclic fashion. For example: Successor for alp='z' in str[]="bcd" is 'b'.
+
+Help Vishal to return the answer.
+
+Can you solve it in O(log(n)) complexity?
+
+Input Format:
+-------------
+Line-1:A string str[]
+Line-2: a character represents an alphabet.
+ 
+Output Format:
+--------------
+Print a character which is the successor.
+ 
+Constraints:
+ 2 <= str.length<= 10^4
+'alp' is a lowercase letter.
+
+ 
+Sample Input-1:
+---------------
+adghijl
+f 
+Sample Output-1:
+----------------
+g
+
+You are given an array of integers nums, there is a sliding window of
+size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position.
+Return the max sliding window. 
+
+Sample Testcase:1
+----------------------------
+input=1 3 -1 -3 5 3 6 7
+3
+output=3 3 5 5 6 7
+
+Explanation:
+---------------------------------
+Window position           Max
+------------------------ -----
+[1 3 -1] -3 5 3 6 7       3
+1 [3 -1 -3] 5 3 6 7       3
+1 3 [-1 -3 5] 3 6 7       5
+1 3 -1 [-3 5 3] 6 7       5
+1 3 -1 -3 [5 3 6] 7       6
+1 3 -1 -3 5 [3 6 7]       7 
+here are N number of small cartoons and each cartoon will have a balloon of 
+some color identified by a number. You are asked to select fixed number of 
+P-cartoons as a subset every time and find the number of unique colored 
+balloons in the number of cartoons "P" you pick everytime.
+
+The resultant cartoons ans will be N-P+1 and return it.
+
+The number of distinct number of balloons is:
+    nums[i:i+p-1] = [nums[i], nums[i+1], ..., nums[i+p-1]].
+
+
+Input Format:
+-------------
+Line-1: Two space separated integers, N and P
+Line-2: N space separated integers, nums[]
+
+Output Format:
+--------------
+Print the (N-P+1) integers as output.
+
+
+Sample Input-1:
+---------------
+7 
+1 2 2 3 3 4 4
+4
+
+Sample Output-1:
+----------------
+3 2 3 2
+
+Explanation: 
+------------
+The number of distinct elements in each subarray of size P goes as follows:
+- nums[0:3] = [1,2,2,3] so ans[0] = 3
+- nums[1:4] = [2,2,3,3] so ans[1] = 2
+- nums[2:5] = [2,3,3,4] so ans[2] = 3
+- nums[3:6] = [3,3,4,4] so ans[3] = 2
+
+A string is good if there are no repeated characters.
+Given a string s, return the number of good substrings of length three in s.
+Note that if there are multiple occurrences of the same substring, every 
+occurrence should be counted.
+A substring is a contiguous sequence of characters in a string.
+
+Sample Testcase:1
+----------------------
+input=xyzzaz
+output=1
+
+Explanation:
+--------------------
+There are 4 substrings of size 3: "xyz", "yzz", "zza", and "zaz". 
+The only good substring of length 3 is "xyz".
+
+Sample Testcase:2
+----------------------
+input=aababcabc
+output=4
+
+Explanation:
+---------------------
+There are 7 substrings of size 3: "aab", "aba", "bab", "abc", 
+"bca", "cab", and "abc".
+
+
+The good substrings are "abc", "bca", "cab", and "abc".
+The Valid shortcuts of a string "abcd", are as follows:
+abcd, abcd, a1cd, ab1d, abc1, 2cd, a2d, ab2, 1b1d, 1bc1,a1c1, 1b2, 2c1, 3d, a3, 4
+
+You are given a string S and shortcut string  SC, 
+Your task is to find out whether the string matches with the given shortcut or not.
+if matched print true, else false.
+
+Note:
+String S contains only lowercase letters and String SC contains only 
+lowercase letters and digits.
+
+Sample Testcase:1
+----------------------------------------
+input=substitution s10n
+output=true
+
+ You are given two strings s and t.
+Your task is to find the smallest substring in s that
+contains all the characters of t (including duplicates).
+If no such substring exists, return an empty string.
+
+Sample Testcase:1
+---------------------------
+input=ADOBECODEBANC
+ABC
+output=BANC
+
+You are given a string s and an integer k.
+Your task is to find the length of the longest substring of s that 
+contains at most k distinct characters.
+If no such substring exists, return 0.
+
+
+Sample Testcase:1
+------------------------------------
+input=eceba
+2
+output=3
+
+Explanation:
+------------------------------------
+The substring "ece" contains 2 distinct characters (e and c) and has length 3.
+
+
+
+You are given an m × n matrix (2D array).
+Your task is to return the elements of the matrix in spiral order.
+
+Spiral traversal means:
+------------------------------------------
+Move left → right across the top row
+Move top → bottom down the right column
+Move right → left across the bottom row
+Move bottom → top up the left column
+Continue this pattern until all elements are visited
+
+Sample Testcase:1
+----------------------------------
+input=3 3
+1 2 3
+4 5 6
+7 8 9
+output=1 2 3 6 9 8 7 4 5
+
+You are given two strings:
+s → the main string
+p → the pattern
+Your job is to find all start indices in s where the substring is an anagram of string p.
+
+An anagram means:
+Same characters
+Same frequency
+Order does not matter
+Return all such indices.
+
+Sample Testcase:1
+----------------------------
+input=cbaebabacd abc
+output=[0, 6]
+
+

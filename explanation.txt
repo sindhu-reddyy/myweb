@@ -1,0 +1,466 @@
+extra points for myself:
+we can use arrays.sort method,.split method
+for character input next string input for line we take nextline
+.put,.getordefault .tochararray .length .putifabsent .add .tolowercase .Arrays.equals(a1,a2)
+we find stack in stack only; we find queue in linkedlist use methods like .size .peek .poll in queue for delete and .pop for stack deleting !queue.isEmpty 
+
+programs to do-lcm,hcf,count digits,fibonacci,swap first and last digit,spy number,product of digits,print number in words,harmonic series,sum of 1+11+111+1111,strong number,print address of variable,add numbers using pointers,find max using pointer,frequency of number,find duplicates,sum of n elements,mean and standard deviation of n elements,reverse of array,find transpose,determinant of matrix,check if matrices are equal,array var count,valid isbn,bubbleort,error and exception,map,dictionaries,heterogram,
+
+
+->to sort names or words:
+take string input; create a string array and split the different words with .split function ; Arrays.sort(array_name);now print finally
+->print count of how many times each character appears: use hashmap
+take string input; so we need a key value pair to denote character and times it appeared hence use hashmap;now create obj for hashmap;use for loop inside that iterate each character with its count using.put method and .getordefault method
+->print first non repeating character: use linked hashmap
+find count of how many times each character appears; using .keyset access values through for loop; .get(ch) gives index of character ; so basically non repeating means appears only once with this print conditions.
+->print final number as sum of digits until its a single digit:
+for this take input;take a while loop for it is single digit;take another while loop for sum of digits;print the final sum
+->print different messages using different methods
+declare different methods and call them in main method
+->print table of input number using method:
+declare a method for multiplying and call that
+->print square of tht number
+->check divisible by 3 or not using method
+->question on super keyword for accesing methods and variables of super class
+->using multilevel inheritance
+->using super sub class
+->over riding concept
+->given l list of words,group them based on their length:
+start with take line input and split it;take tree map;why? because we need a number with words or strings associated to it;so take integer and list of strings; now u have created obj for treemap; loop through the words using for loop where first find length using .length;then for object use .putifabsent method and in it add length and a new arraylis; now for obj get length and add respective word to it using .get and .add functions finally print object.
+->check if strings are anagrams i.e are they of same length ad letters or not:
+first take 2 string inputs;convert to lower case; convert these to 2 char arrays ;check if lengths are equal, if yes sort the arrays and check if equal or not using arrays.equals and store it in a Boolean; print result
+->list interface
+just take arraylist obj; add items to list using .add function and finally print all
+->implementing stack operations on list interface:
+so for this we have a direct data structure stack; take string input and split using array;now using for loop add each element into stack using stack.add(Integer.parseInt(str)); now for printing elements use for loop =>for(int i=stack.size()-1;i>=0;i--){stack.get(i)+" "} for size use .size for peek use .peek for pop use .pop
+->Remove duplicate elements from list:
+take input of required no. of elements and add them to arraylist using .add; create hashset and pass arraylist to it; print hashset
+->implementing set interface using hashset:
+take input of required elements and add to hashset; now print each element to it
+->implementing queue operations using collections:
+take input of queue using linkedlist; iterate and print each element using for loop use .size .peek for first element .poll for deleting element
+->borrow books from library: use hashmap
+so create object for hashmap where we need to display string as key with list of strings as value; take input of name with books and finally a string;now in a method define parameters as object,user,book; now use methods like .putifabsent and .get .add for borrowing book
+->Armstrong -cubes of digit make number
+->neon number - sum of digits ofsquare of number make the number
+->perfect number -sum of divisors make the number
+->leap year
+->prime number
+->unique number - no number should be repeated;used a Boolean array and checked digits[d]
+->reverse - same extracting and dividing with number; use rev=rev*10+d 
+->palindrome check- check if original is reverse or not
+->frequency analyzer i.e, identify the top 3 frequent words:
+->find hcf and lcm; find hcf with eucleadian alogorithm, from formula product=hcf*lcm we get lcm
+->count digits- just do n/=10 and increment count
+->Fibonacci series- sum of 2 prev terms gives present term
+->swap first and last digit- take input and print using .substring(begin,en indices) use .length() for location specification
+->spy number-sum and prduct are equal
+->harmonic series
+->sum of 1+11+111+1111+....
+->strong number- sum of factorials of each digit gives number itself
+->find duplicates in array- take input, create 2 hashsets of seen and duplicate,if already present in seen then add to duplicates in case of char and string use entry.getvalue>1
+->reverse of an array
+->transpose of matrix
+->determinant of matrix
+->matrices are equal or not
+->valid isbn or not - 2 types of isbn 10 and 13 
+for 10-> take input, if not 10 digits return, check if i=9 and ch is x then digit is 10; else if character.isDigit digit becomes ch-'0' else return now sum is sum plus digit*10-i;sum%11 gives isbn or not
+for 13-> check 13 digits if not return,is not of char.isdig return, digit is ch-0,if even placed digit multiply with 1 else odd with 3, do sum modulo by 10,get ans
+->prited pyramid pattern 1/212/32123 etc  -i from 1ton with 3 j loops
+->solid square-loop runs from 1 to n in both i and j
+->hollow square - if i=1orn or j=1 or n print * else space
+->upright and inv right angle triangle- loop runs for i -1 to n j-1 to i;loop for i-1 to n for j-i to n
+->pyramid pattern-one i and 2 j loops inside i,i-1ton j-1ton-i->" " j-1toi->"* "
+->inverted pyramid  pattern- same j loops with i runs from n to 1,i--
+->diamond pattern- print upright pyr from 1 to n and inv pyr from n-1 to 1
+->hollow diamond pattern-same as printing diamond but second j loop runs from 1 to 2i-1 where if j is 1 or 2i-1 print * else space
+->Butterfly pattern - u have i loop from 1 to n which has 3 j loops 1toi print *,1to2n-2i print space,1toi print *.another i loop with same j loops but runs from n to 1 i--
+->sandglass pattern - make changes in diamond with exchanging up down
+->right angle triangle with numbers-print j instead of star for inverted also same
+->Floyd triangle-use right angle logic where consider a number=1 print it and keep incrementing
+->left angle triangle and invert-same as pyramid but in first j loop give 2 spaces and viceversa
+->pascals triangle-same logic as pyramid pattern, print num=1 and use formula num=num*(i-j)/(j+1)         only for pascals conder loops from 0 to n see boundaries
+->printed diamond with 1/121/12321 also with 1/212/32123 
+->palindrome alphabet triangle
+->hollow alphabet triangle same as pyr j loop condition if j==1,j==n or i==n
+->hourglass alphabet
+->Spiral traversing of matrix:-take input of matrix,consider 4 var top bot left right, put 4 for loops for traversing four side in a while loop,t++,r--,b--;l++;while print top[i],[i]left
+->finding target sum using 2 pointer->take array inp,while left<right sum=a[left+right], if s=t print pair l++r--,else if s<t l++,s>t r--
+->return string that starts with prefix- use .startWith()  can also use .endsWith
+->zigzag pattern with string - take string and row input, i loop 0torow and j loop 1tostringlength,j=j+row, print string.charAt(j)
+->grouping anagrams together-take string input convert to string array then to char array,sort chars,create key and use .putIfAbsent,.put.add,print final result as list of list of str with object values
+->triangle binary pattern-same as right angle triangle with condition if i+j%2==0 print 1 else print 0
+->checker board pattern - same i loop 1ton j loop 1ton i+j%2==0 print * else print space and adjust accordingly
+->zig zag pattern -n as rows and m as total stars, take i loop from 1ton and j loop from 1tom, if i+j%4==0 or i=2 and j%4==0 print *,else print space
+->upright and hollow pyramid and inverted
+->plus sign-consider i loop 1ton j loop 1ton if i==n/2+1 or j=n/2+1 then print * else space
+->spiral matrix number printing same as spiral traversal-take r,c input,write condition of while inside 4 for loops,take each number inside loop as num++ where num=1.final print arr with ij loops from 0tor and 1toc
+->hollow rhombus-i loop 1ton with j loop 1ton-i space,1ton if i=1,n,j=1,n print star else space
+->solid rhombus- i loop 1ton j loop 1ton-1 space 1ton star
+->hollow rhombus-same rhombus with condition i=1,n,j=1,n
+->second largest element
+->remove duplicates in array
+->print palindrome of string using recursion
+->find max,min,avg of subarray using sliding window
+->array rotation-check for if lengths of both are same and s1+s1.contains s2
+->check for digit-s.matches "\\d+",letters ["a-zA-Z+"] digit and letter ["a-zA-Z0-9+"] also character.isdigit(ch) .isLetter etc
+
+->Purpose	Code
+Copy an array	int[] copy = Arrays.copyOf(nums, nums.length);
+Sort an array	Arrays.sort(nums);
+Fill array	Arrays.fill(nums, 5);
+Compare arrays	Arrays.equals(a, b);
+Print array	System.out.println(Arrays.toString(nums));
+Print 2D array	System.out.println(Arrays.deepToString(mat));
+
+->Usage	Method
+Length of string	s.length()
+Get character	s.charAt(index)
+Compare strings	s.equals(str)
+Ignore case compare	s.equalsIgnoreCase(str)
+Compare lexicographically	s.compareTo(str)
+Convert to uppercase	s.toUpperCase()
+Convert to lowercase	s.toLowerCase()
+Trim spaces	s.trim()
+Substring	s.substring(2) , s.substring(2,5)
+Replace characters	s.replace('a','e')
+Check contains	s.contains("abc")
+Check prefix	s.startsWith("He")
+Check suffix	s.endsWith("lo")
+Split string	s.split(" ")
+Convert to char array	s.toCharArray()
+
+->Conversion Type	Syntax
+int → double	automatic
+double → int	(int) value
+String → int	Integer.parseInt(s)
+int → String	String.valueOf(i)
+char → int	automatic
+int → char	(char) num
+
+
+->recursion problems:::
+=print 1 to n,n to 1 bc:n<=0 rc sop fn(n-1), sum of n numbers ,factorial ,power ,prime ,count digits, reverse, gcd , Fibonacci,
+=sum,max,mn sort,lin,bin,reverse,count,print substrings for arrays reverse string
+=ll insert delete begin end middle print search clear size isempty 
+import java.util.*;
+class Node{
+    int data;
+    Node next;
+    Node(int data){
+        this.data=data;
+        this.next=null;
+    }
+}
+class LinkedList{
+    Node head;
+    public void printList(){
+        if(head==null){
+            System.out.println("Linked list is empty");
+            return;
+        }
+        Node temp=head;
+        while(temp!=null){
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+        System.out.println(" null");
+        //System.out.println();
+    }
+    public void addFirst(int data){
+        Node newNode=new Node(data);
+        newNode.next=head;
+        head=newNode;
+    }
+    public void addLast(int data){
+        Node newNode=new Node(data);
+        if(head==null){
+            head=newNode;
+            return;
+        }
+        Node temp=head;
+        while(temp.next!=null){
+            temp=temp.next;
+        }
+        temp.next=newNode;
+    }
+    public void addIndex(int index,int data){
+        if(index==0){
+            addFirst(data);
+            return;
+        }
+        Node newNode=new Node(data);
+        Node temp=head;
+        int ci=0;
+        while(temp!=null && ci<index-1){
+            temp=temp.next;
+            ci++;
+        }
+        if(temp==null){
+            System.out.println("Index out of bounds");
+            return;
+        }
+        newNode.next=temp.next;
+        temp.next=newNode;
+
+    }
+    public void deleteFirst(){
+        if(head==null){
+            System.out.println("List is empty");
+            return;
+        }
+        head=head.next;
+    }
+    public void deleteLast(){
+        if(head==null){
+            System.out.println("List is empty");
+            return;
+        }
+        if(head.next==null){
+            head=null;
+            return;
+        }
+        Node temp=head;
+        while(temp.next.next!=null){
+            temp=temp.next;
+        }
+        temp.next=null;
+    }
+    public void deleteindex(int index){
+        if(index==0){
+            deleteFirst();
+            return;
+        }
+        Node temp=head;
+        int ci=0;
+        while(temp!=null && ci<index-1){
+            temp=temp.next;
+            ci++;
+        }
+        if(temp==null || temp.next==null){
+            System.out.println("Index out of bounds");
+            return;
+        }
+        temp.next=temp.next.next;
+    }
+    public void deleteValue(int value){
+        if(head==null) return;
+        if(head.data==value){
+            head=head.next;
+            return;
+        }
+        Node temp=head;
+        while(temp.next!=null && temp.next.data!=value){
+            temp=temp.next;
+        }
+        if(temp.next==null){
+            System.out.println("Value not found");
+            return;
+        }
+        temp.next=temp.next.next;
+    }
+}
+class prefs{
+    public static void main (String[] args) {
+        Scanner sc=new Scanner(System.in);
+        LinkedList list=new LinkedList();
+        list.addFirst(20);
+        list.addLast(30);
+        list.addFirst(10);
+        list.addIndex(1, 15);
+        list.printList();
+        list.deleteFirst();
+        list.printList();
+        list.deleteLast();
+        list.printList();
+        list.deleteindex(1);
+        list.printList();
+
+    }
+}
+=reverse ll
+public void reverseIterative() {
+    Node prev = null;
+    Node current = head;
+    Node next = null;
+
+    while (current != null) {
+        next = current.next;  // Store next node
+        current.next = prev;  // Reverse the link
+        prev = current;       // Move prev forward
+        current = next;       // Move current forward
+    }
+
+    head = prev; // Update head to new first node
+}
+=find middle element
+public Node findMiddle() {
+    if (head == null) return null;
+
+    Node slow = head;
+    Node fast = head;
+
+    while (fast != null && fast.next != null) {
+        slow = slow.next;       // move 1 step
+        fast = fast.next.next;  // move 2 steps
+    }
+
+    return slow; // slow is now at the middle node
+}
+=loop exist or not
+// Detect if linked list has a cycle
+public boolean hasLoop() {
+    Node slow = head;
+    Node fast = head;
+
+    while (fast != null && fast.next != null) {
+        slow = slow.next;         // move 1 step
+        fast = fast.next.next;    // move 2 steps
+
+        if (slow == fast) {       // pointers meet → loop exists
+            return true;
+        }
+    }
+
+    return false;  // no loop
+}
+=merge 2 liss
+// Merge two sorted linked lists recursively
+public static Node mergeRecursive(Node l1, Node l2) {
+    if (l1 == null) return l2;
+    if (l2 == null) return l1;
+
+    if (l1.data <= l2.data) {
+        l1.next = mergeRecursive(l1.next, l2);
+        return l1;
+    } else {
+        l2.next = mergeRecursive(l1, l2.next);
+        return l2;
+    }
+}
+=removeduplicates in sorted ll
+// Remove duplicates from a sorted linked list
+public void removeDuplicates() {
+    if (head == null) return;
+
+    Node current = head;
+
+    while (current != null && current.next != null) {
+        if (current.data == current.next.data) {
+            current.next = current.next.next; // skip duplicate
+        } else {
+            current = current.next; // move forward
+        }
+    }
+}
+
+
+
+
+bfs:
+import java.util.*;
+class BFS{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int e=sc.nextInt();
+        List<List<Integer>> adj=new ArrayList<>();
+        for(int i=0;i<n;i++){
+            adj.add(new ArrayList<>());
+        }
+        for(int i=0;i<e;i++){
+            int u=sc.nextInt();
+            int v=sc.nextInt();
+            adj.get(u).add(v);
+            adj.get(v).add(u);
+        }
+        int start=sc.nextInt();
+        bfs(adj,n,start);
+    }
+    static void bfs(List<List<Integer>> adj,int n,int start){
+        Queue<Integer> q=new LinkedList<>();
+        boolean[] visited=new boolean[n];
+        q.add(start);
+        visited[start]=true;
+        while(!q.isEmpty()){
+            int p=q.poll();
+            System.out.print(p+" ");
+            for(int i:adj.get(p)){
+                if(!visited[i]){
+                    q.add(i);
+                    visited[i]=true;
+
+                }
+                
+            }
+        }
+    }
+}
+
+
+You are given a numeric string s consisting of digits '0' to '9' and an integer k. 
+You can choose any digit in the string and change it to any other digit. 
+You can perform this operation at most k times.
+
+Your task is to find and return the length of the longest substring that contains 
+the same digit after performing at most k changes.
+
+Input Format:
+------------------------------------
+Line:1 String followed by k value is number of changes that can be made
+
+
+Sample Testcase:1
+-------------------------------------
+input=11221
+
+
+
+1
+Output=3
+Explanation:
+-----------------------------------
+Replace one '2' with '1' → "11121". Longest substring with same digit = "111", length = 3.
+
+
+We are given:
+A maze represented as a 2D grid:
+0 → empty space (the ball can roll)
+1 → wall (the ball stops)
+
+A start cell (startRow, startCol)
+A destination cell (destRow, destCol)
+
+The ball rolls continuously in one direction until it hits a wall.
+Once it stops, it can choose a new direction.
+return true if the ball can stop at the destination, otherwise return false.
+
+Sample Testcase:1
+-------------------------------
+input=4 4
+0 0 1 0
+0 0 0 1
+1 0 0 0
+0 1 1 0
+0 0
+3 3
+output=true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

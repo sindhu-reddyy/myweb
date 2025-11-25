@@ -1,0 +1,497 @@
+A graph is bipartite if you can divide its vertices into two sets such that:
+No two adjacent vertices belong to the same set.
+Or equivalently: you can color the graph using 2 colors (0 and 1) so that no edge connects two nodes of the same color.
+Your task is to determine whether it is bipartite or not bipartite using BFS or DFS.
+
+Sample Testcase:1
+----------------------------------
+input=6 6
+1 2
+2 3
+3 4
+4 5
+5 6
+2 6
+output=Not Bipartite
+
+Explanation:
+------------------------------
+
+1 - 2 - 3 - 4 - 5 - 6
+      \_____________/
+
+
+Sample Testcase:2
+----------------------------------
+input=6 5
+1 2
+2 3
+3 4
+4 5
+5 6
+output=Bipartite
+
+Explanation:
+------------------------------------
+1--2--3--4--5--6
+
+You are given an undirected tree with N nodes labeled from 1 to N.
+A leaf node is defined as:
+A node that has no children (in DFS perspective)
+Or, equivalently: a node whose degree is 1, except the root if N = 1
+Your task is to count how many leaf nodes the tree contains.
+
+Sample Testcase:1
+-----------------------------------
+input=7
+1 2
+1 3
+2 4
+2 5
+3 6
+6 7
+output=3
+
+Explanation:
+--------------------------------------
+        1
+      /   \
+     2     3
+    / \     \
+   4   5     6
+              \
+               7
+4,5,7 so total 3 leaf nodes
+
+You have two teams
+Titans and Warriors
+Both have N players
+Both have same jersey numbers but in different orders
+Your task is to find the index where the same jersey number appears
+in warriors(W array)
+
+Note:
+------
+If duplicate exist you must always choose the smallest avaibale index to get a
+lexicographically smallest mapping
+
+Sample Testcase:1
+-------------------------------------------
+input=7
+5 7 5 9 7 3 9
+7 5 3 9 5 9 7
+output=1 0 4 3 6 2 5
+
+
+Given an array of integers arr and two integers k and threshold, return the number
+of sub-arrays of size k and average greater than or equal to threshold.
+
+Sample Testcase:1
+------------------------------------
+8  (array size)
+2 2 2 2 5 5 5 8 (arrayelements)
+3 (subarraysize)
+4 (threshold value)
+output=3
+Explanation:
+-----------------------------------
+Sub-arrays [2,5,5],[5,5,5] and [5,5,8] have averages 4, 5 and 6 
+respectively. All other sub-arrays of size 3 have averages less than 4 (the threshold).
+
+Given a string and integer k, find vowel count in every substring of size k.
+
+Sample Testcase:1
+----------------------------------
+input=hellobeautiful
+5
+output = 2 2 2 3 4 3 4 3 3 2
+
+ Read a line of strings and print the top 3 most frequent words.
+
+
+Sample Test Case:1
+---------------------------------
+input=Java is simple Java is powerful Java is everywhere
+output=Java: 3
+is: 3
+simple: 1
+
+
+Given an array representing fruits types, find the longest 
+subarray with at most 2 distinct fruits else print 0.
+
+Sample Testcase:1
+---------------------------------------
+input=1 2 1 2 3 2 2 2
+output = 5
+Explanation:
+----------------------------------------
+(Subarray: [2,3,2,2,2])
+
+Given an array of positive integers and an integer K, find the length of the 
+longest subarray whose sum is less than or equal to K.
+
+Sample Testcase:1
+----------------------------------
+input=9
+3 1 2 7 4 2 1 1 5
+8
+output=4
+
+Explanation:
+----------------------------------
+The elements 4+2+1+1 is less than or equal to 8, therefore the 
+length of longest subarray is 4.
+
+
+
+You are given an m × n matrix (2D array).
+Your task is to return the elements of the matrix in spiral order.
+
+Spiral traversal means:
+------------------------------------------
+Move left → right across the top row
+Move top → bottom down the right column
+Move right → left across the bottom row
+Move bottom → top up the left column
+Continue this pattern until all elements are visited
+
+Sample Testcase:1
+----------------------------------
+input=3 3
+1 2 3
+4 5 6
+7 8 9
+output=1 2 3 6 9 8 7 4 5
+
+You are given a string s and an integer k.
+Your task is to find the length of the longest substring of s that 
+contains at most k distinct characters.
+If no such substring exists, return 0.
+
+
+Sample Testcase:1
+------------------------------------
+input=eceba
+2
+output=3
+
+Explanation:
+------------------------------------
+The substring "ece" contains 2 distinct characters (e and c) and has length 3.
+
+ two strings s and t.
+Your task is to find the smallest substring in s that
+contains all the characters of t (including duplicates).
+If no such substring exists, return an empty string.
+
+Sample Testcase:1
+---------------------------
+input=ADOBECODEBANC
+ABC
+output=BANC
+
+There is a large gathering of Russian Military, all the soldiers formed as a grid of 0's and 1's.
+Here, 0's indicates women soldiers, 1's indicates men soldiers.
+
+Now, the commandant wants to find out the largest square of soldiers.
+The square should contain only men soldiers on it's border.
+
+If such largest square found, print the number of soldiers in it.
+Otherwise, print 0.
+
+Sample Input-1:
+-------------------
+4 5
+1 1 0 0 0
+0 1 1 1 1
+1 0 1 0 1
+0 1 1 1 1
+
+Sample Output-1:
+---------------------
+9
+
+Sample Input-2:
+-------------------
+2 2
+1 0 
+0 1
+
+Sample Output-2:
+---------------------
+1
+
+Sample Input-3:
+-------------------
+2 2
+0 0 
+0 0
+
+Sample Output-3:
+---------------------
+0
+
+We have a grid with:
+0 → empty (magnet can be placed here)
+B → iron ball
+M → metal block (stops magnetic pull)
+
+Placing a magnet at any empty cell attracts all B's in:
+same row (left + right)
+same column (up + down)
+Stopping when we hit M.
+
+Find the maximum number of B's attracted from any empty cell.
+
+Sample Testcase:1
+------------------------------
+input=3 4
+0 B 0 0 
+B 0 M B
+0 B 0 0
+output=3 
+
+Explanation:
+---------------------------
+For the given grid,
+0 B 0 0 
+B 0 M B
+0 B 0 0
+
+Placing a Magnet at (1,1) attacts 3 iron balls.
+
+There is a bi-directional graph with n vertices, where each vertex is labeled 
+from 0 to n - 1 (inclusive). The edges in the graph are represented as a 
+2D integer array edges, where each edges[i] = [ui, vi] denotes a bi-directional 
+edge between vertex ui and vertex vi. Every vertex pair is connected by at most 
+one edge, and no vertex has an edge to itself.
+
+You want to determine if there is a valid path that exists from vertex source 
+to vertex destination.
+
+Given edges and the integers n, source, and destination, return true if there 
+is a valid path from source to destination, or false otherwise.
+
+Note: Given number of vertices V and edges E, a graph is created and 
+represented in the form of adjacency list. Given the graph, perform a 
+DFS traversal of the graph.
+
+
+Sample Testcase:1
+------------------------------
+input=3 3
+0 1
+1 2
+2 0
+0 2
+output=true
+
+Explanation:
+----------------------------------
+there are two paths from vertex 0 to vertex 2
+- 0 → 1 → 2
+- 0 → 2
+
+Given an undirected graph with N vertices (0 to N−1) and E edges,
+you must find the number of connected components in the graph using DFS.
+
+A connected component is a group of vertices where every vertex is reachable
+from any other vertex in that group.
+
+*****Note: Use recursion*******
+
+Sample Testcase:1
+---------------------------
+6 4
+0 1
+0 2
+3 4
+4 5
+output=2
+Explantion:
+-----------------------------
+Component 1:  0 — 1
+               \
+                2
+
+Component 2:  3 — 4 — 5
+
+
+There are two different colored balls in a box, either 'red' or 'blue' in color.
+Red color balls are indicated with 1 and Blue color balls are indiacted with 2.
+ 
+All the balls are placed in a row in random order, 
+Your task is to find the largest consecutive set of blue colored balls
+in the row and print the length of it.
+ 
+ 
+ Input Format:
+ -------------
+ Line-1: An integer N represents the number of balls.
+ Line-2: N Space seperated integers, only 1's and 2's
+   
+ Output Format:
+ --------------
+ Print an integer result.
+  
+   
+ Sample Input-1:
+ ---------------
+8
+2 2 2 1 2 2 1 1
+   
+ Sample Output-1:
+ ----------------
+3
+   
+   
+ Sample Input-2:
+ ---------------
+10
+1 2 2 1 2 1 2 2 1 2
+   
+ Sample Output-2:
+ ----------------
+ 2
+
+
+You are given a 2D grid of size rows x cols. A robot (or a point) is placed 
+at a starting position (row, col) within the grid.
+
+The robot can move in 8 possible directions:
+Up-Left
+Up
+Up-Right
+Left
+Right
+Down-Left
+Down
+Down-Right
+Your task is to print the new position after moving one step in each of the 8 directions.
+If the new position goes out of the grid boundaries, print "Out of bounds" for that direction.
+
+Sample Testcase:1
+-------------------------------
+input=3 3
+1 1
+output=Up-Left: (0, 0)
+Up: (0, 1)
+Up-Right: (0, 2)
+Left: (1, 0)
+Right: (1, 2)
+Down-Left: (2, 0)
+Down: (2, 1)
+Down-Right: (2, 2)
+
+An explorer is standing on a 2D grid of size N × M.
+The explorer’s current position is given by (row, col).
+
+From this position, the explorer can move up, down, left, or right,
+but must stay inside the grid boundaries.
+
+Your task is to:
+Display all valid positions the explorer can move to from the current cell.
+If a move goes outside the grid, print "Out of bounds" for that direction.
+
+Input Format:
+------------------------
+Line:1 size of row and column values
+Line:2 starting vertex
+
+Sample Testcase:1
+-------------------------------------
+input=3 3
+1 1
+output=Move Up -> (0, 1)
+Move Down -> (2, 1)
+Move Left -> (1, 0)
+Move Right -> (1, 2)
+
+Explanation:
+-----------------------------------------
+The grid has 3 rows and 3 columns (indices 0–2).
+Starting position is (1,1) → center of the grid.
+All 4 moves remain inside the grid, so all are valid.
+
+You are given an integer array prices where prices[i] is the price of NeetCoin on the ith day.
+You may choose a single day to buy one NeetCoin and choose a different day
+in the future to sell it.
+Return the maximum profit you can achieve. You may choose to not make any
+transactions,in which case the profit would be 0.
+
+Sample Testcase:1
+-----------------------------
+input=10 1 5 6 7 1
+output=6
+Explanation: 
+--------------------------
+Buy prices[1] and sell prices[4], profit = 7 - 1 = 6.
+/*Given a maze, find all paths from top-left to bottom-right using only right and down moves.
+(1 = open , 0 = blocked). 
+Function Signature: void findPaths(int[][] maze)
+Test Case:
+case=1
+input=3
+1 0 0
+1 1 0
+0 1 1
+output=Path: (0,0)->(1,0)->(1,1)->(2,1)->(2,2)
+Successfully reached
+case=2
+input=2
+1 0
+0 0
+output=Path: (0,0)
+Blocked
+case=3
+input=2
+1 0
+1 1
+output=Path: (0,0)->(1,0)->(1,1)
+Successfully reached
+case=4
+input=2
+1 1
+0 0
+output=Path: (0,0)->(0,1)
+Blocked
+*/
+import java.util.*;
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[][] arr=new int[n][n];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        
+    }
+}
+/* You are given a string which is a password 
+you have to just check if the password entered by the user is a valid or not
+if it is a valid password print 1 else print -1
+
+rules of the password
+Minimum length is 6 characters Maximum length is 15 character
+it should have a minimum of one Capital Letter One digit and One special symbol(*,@,#)
+
+Special symbols allowed are only (*,@,#)
+
+
+input = appLE12@
+output = 1
+
+Explanation :- It has one Capital Letter one digit and one special symbol
+Length is of the string is also 8 characters
+
+input = apple123#
+output = -1
+
+Explanation :- It doesn't have a Capital letter
+*/
+
+
